@@ -1,0 +1,99 @@
+.contenedorProductos{
+    display: grid;
+    grid-template-areas: 
+    "header header header"
+    "caja1 caja2 caja3"
+    "caja4 caja5 caja6"
+    "footer footer footer"
+    ;
+
+}
+img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+.cajaUno{
+    grid-area: caja1;
+    display: flex;
+    padding: 10px 10px 10px 10px;
+    display: block;
+    height: 400px;
+    width: 400px;
+
+}
+
+
+.cajaDos{
+    grid-area: caja2;
+    display: flex;
+    padding: 10px 10px 10px 10px;
+    display: block;
+    height: 400px;
+    width: 400px;
+}
+
+.card{
+    background-color: #eaf9d9;
+
+}
+.cajaTres{
+    grid-area: caja3;
+    display: flex;
+    padding: 10px 10px 10px 10px;
+    display: block;
+    height: 400px;
+    width: 400px;
+}
+
+
+.cajaCuatro{ 
+    grid-area: caja4;
+    display: flex;
+    padding: 10px 10px 10px 10px;
+    display: block;
+    height: 400px;
+    width: 400px;
+    
+}
+
+
+.cajaCinco {
+    grid-area: caja5;
+    display: flex;
+    padding: 10px 10px 10px 10px;
+    display: block;
+    height: 400px;
+    width: 400px;
+    
+}
+
+
+.cajaSeis { 
+    grid-area: caja6;
+    display: flex;
+    padding: 10px 10px 10px 10px;
+    display: block;
+    height: 400px;
+    width: 400px;
+}
+
+
+
+
+.btn{
+   background-color: #af7a6d;
+    font-family: sans-serif;
+    border-radius: 5px;
+    display: block;
+    background: linear-gradient(to top,  #eaf9d9,#af7a6d);
+    
+
+}
+
+
+
+.cajaNosotros {
+    display: flex;
+    place-content: center
+}

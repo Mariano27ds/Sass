@@ -1,0 +1,99 @@
+h1{
+    color: black;
+    text-align: center;
+    animation-name: texto;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+
+}
+.contenedor{
+    display: grid;
+    grid-template-areas: 
+    "header header header header"
+    "section1 section1 section2 section2"
+    "seccion1 seccion1 section2 section2"
+    "footer footer footer footer";
+    
+}
+header{
+    background-color: #af7a6d;
+    background-image: url(../img/Amapola_verde_coral_rosa_page-0001-removebg-preview.png);
+    background-repeat: no-repeat;
+    background-position: left;
+    font-family: sans-serif;
+    width: 100%;
+    /*position: fixed; No me queda como quiero y me tapa el texto sil o aplico*/ 
+    
+    grid-area: header;
+
+}
+.section1{
+    grid-area: section1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 15px;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+aside{
+    grid-area: section2;
+    
+}
+p{
+    font-family: sans-serif;
+}
+a{
+    color: black;
+    text-decoration: none;
+}
+li{
+    list-style-type: none;
+}
+.subtitulo {
+    color: black;
+    text-align: center;
+    animation-name: texto;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+
+
+}
+
+
+body {
+    background-color: #eaf9d9;
+}
+.menuNavegacion{
+    display: inline;
+    text-align: center;
+}
+nav{
+    text-align: center;
+}
+
+
+
+footer {
+    text-align: center;
+    grid-area: footer;
+}
+.tituloFooter{
+    font-family: sans-serif;
+}
+.menuFooter{
+    display: inline;
+}
+@media(max-width:768px){
+    .contenedor{
+        display: grid;
+        grid-template-areas: 
+        "header header"
+        "section1 section1"
+        "section1 section1"
+        "section2 section2"
+        "footer footer";
+
+}}

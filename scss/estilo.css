@@ -1,0 +1,247 @@
+h1 {
+  color: black;
+  text-align: center;
+  -webkit-animation-name: texto;
+          animation-name: texto;
+  -webkit-animation-duration: 10s;
+          animation-duration: 10s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+.contenedor {
+  display: grid;
+  grid-template-areas: "header header header header" "section1 section1 section2 section2" "seccion1 seccion1 section2 section2" "footer footer footer footer";
+}
+
+header {
+  background-color: #af7a6d;
+  background-image: url(../img/Amapola_verde_coral_rosa_page-0001-removebg-preview.png);
+  background-repeat: no-repeat;
+  background-position: left;
+  font-family: sans-serif;
+  width: 100%;
+  /*position: fixed; No me queda como quiero y me tapa el texto sil o aplico*/
+  grid-area: header;
+}
+
+.section1 {
+  grid-area: section1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 15px;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+aside {
+  grid-area: section2;
+}
+
+p {
+  font-family: sans-serif;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+.subtitulo {
+  color: black;
+  text-align: center;
+  -webkit-animation-name: texto;
+          animation-name: texto;
+  -webkit-animation-duration: 10s;
+          animation-duration: 10s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+body {
+  background-color: #eaf9d9;
+}
+
+.menuNavegacion {
+  display: inline;
+  text-align: center;
+}
+
+nav {
+  text-align: center;
+}
+
+footer {
+  text-align: center;
+  grid-area: footer;
+}
+
+.tituloFooter {
+  font-family: sans-serif;
+}
+
+.menuFooter {
+  display: inline;
+}
+
+@media (max-width: 768px) {
+  .contenedor {
+    display: grid;
+    grid-template-areas: "header header" "section1 section1" "section1 section1" "section2 section2" "footer footer";
+  }
+}
+.contenedorProductos {
+  display: grid;
+  grid-template-areas: "header header header" "caja1 caja2 caja3" "caja4 caja5 caja6" "footer footer footer";
+}
+
+img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.cajaUno {
+  grid-area: caja1;
+  display: flex;
+  padding: 10px 10px 10px 10px;
+  display: block;
+  height: 400px;
+  width: 400px;
+}
+
+.cajaDos {
+  grid-area: caja2;
+  display: flex;
+  padding: 10px 10px 10px 10px;
+  display: block;
+  height: 400px;
+  width: 400px;
+}
+
+.card {
+  background-color: #eaf9d9;
+}
+
+.cajaTres {
+  grid-area: caja3;
+  display: flex;
+  padding: 10px 10px 10px 10px;
+  display: block;
+  height: 400px;
+  width: 400px;
+}
+
+.cajaCuatro {
+  grid-area: caja4;
+  display: flex;
+  padding: 10px 10px 10px 10px;
+  display: block;
+  height: 400px;
+  width: 400px;
+}
+
+.cajaCinco {
+  grid-area: caja5;
+  display: flex;
+  padding: 10px 10px 10px 10px;
+  display: block;
+  height: 400px;
+  width: 400px;
+}
+
+.cajaSeis {
+  grid-area: caja6;
+  display: flex;
+  padding: 10px 10px 10px 10px;
+  display: block;
+  height: 400px;
+  width: 400px;
+}
+
+.btn {
+  background-color: #af7a6d;
+  font-family: sans-serif;
+  border-radius: 5px;
+  display: block;
+  background: linear-gradient(to top, #eaf9d9, #af7a6d);
+}
+
+.cajaNosotros {
+  display: flex;
+  place-content: center;
+}
+
+@-webkit-keyframes texto {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100;
+  }
+}
+
+@keyframes texto {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100;
+  }
+}
+.cajaFormulario {
+  margin-left: 40%;
+  margin-right: 40%;
+}
+
+.botones input {
+  margin-left: 40%;
+  margin-right: 40%;
+}
+
+.mapa {
+  display: none;
+}
+
+/**Pagina contacto**/
+.cajaFormulario {
+  margin-left: 40%;
+  margin-right: 40%;
+}
+
+input .botones {
+  background: linear-gradient(to top, #eaf9d9, #af7a6d);
+  font-family: sans-serif;
+  border-radius: 5px;
+}
+
+.contenedorVentas {
+  display: grid;
+  grid-template-areas: "header header header header" "tabla tabla mapa mapa" "tabla tabla mapa mapa" "footer footer footer footer";
+}
+
+.tabla {
+  grid-area: tabla;
+}
+
+.mapa {
+  grid-area: mapa;
+  place-content: center;
+}
+
+@media (max-width: 768px) {
+  .mapa {
+    display: none;
+  }
+}
+table {
+  display: grid;
+  place-content: center;
+}/*# sourceMappingURL=estilo.css.map */

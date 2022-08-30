@@ -1,0 +1,78 @@
+@import "principal";
+@import "productos";
+
+@keyframes texto{
+    0%{ 
+        opacity: 0;
+     }
+     100%{
+        opacity: 100;
+     }
+}
+
+
+
+
+   
+.cajaFormulario{
+    margin-left: 40%;
+    margin-right: 40%;
+}
+.botones input{
+    margin-left: 40%;
+    margin-right: 40%;
+
+}
+.mapa{
+    display: none;
+}
+
+
+
+
+
+/**Pagina contacto**/
+.cajaFormulario{
+   
+    margin-left: 40%;
+    margin-right: 40%;
+}
+
+input{
+    .botones{
+    background: linear-gradient(to top,  #eaf9d9,#af7a6d);
+    font-family: sans-serif;
+    border-radius: 5px}
+    
+}
+
+    
+
+
+.contenedorVentas{
+    display: grid;
+    grid-template-areas: 
+    "header header header header"
+    "tabla tabla mapa mapa"
+    "tabla tabla mapa mapa"
+    "footer footer footer footer";
+}
+.tabla{
+    grid-area: tabla;
+}
+
+.mapa{
+    grid-area: mapa;
+    place-content: center;
+}
+@media(max-width:768px){
+    .mapa{
+        display: none;
+    }
+}
+
+table{
+    display: grid;
+    place-content: center;
+    
+}
